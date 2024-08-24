@@ -1,0 +1,11 @@
+npm install bootstrap
+
+or 
+
+npm i bootstrap
+
+this will install bootstrap in the node_modules directory.
+
+node_mouldes -> bootstrap -> dist  
+
+you will find an uncompressed release, compressed release and map file.

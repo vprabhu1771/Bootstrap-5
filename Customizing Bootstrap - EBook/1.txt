@@ -1,0 +1,40 @@
+https://www.youtube.com/watch?v=nCX3QVl_PiI
+1) Open Run Window
+
+START + R
+
+
+2) Go to Command Prompt
+
+cmd
+
+3) Go to Desktop
+
+cd Desktop
+
+
+4) Create a Project Folder
+
+mkdir web
+
+
+5) Go to Project Folder
+
+cd web
+
+
+6) Initialize Node Project
+
+npm init
+
+
+7) Open VSCode
+
+code .
+
+
+8) Create HTML File
+
+index.html
+
+
