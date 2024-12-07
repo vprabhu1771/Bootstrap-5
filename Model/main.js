@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     // Trigger Model via JQuery
     $('.addCategory').modal('show');
 
