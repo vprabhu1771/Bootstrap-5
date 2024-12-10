@@ -180,7 +180,7 @@ Alerts can also contain additional HTML elements like headings, paragraphs and d
 Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
 
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -238,7 +238,7 @@ Need more than one icon for your alerts? Consider using more Bootstrap Icons and
   </symbol>
 
 </svg>
-```
+
 
 <div class="alert alert-primary d-flex align-items-center" role="alert">
 
@@ -282,3 +282,46 @@ Need more than one icon for your alerts? Consider using more Bootstrap Icons and
   </div>
 
 </div>
+```
+
+![Image](11.PNG)
+
+# 12 - Dismissing
+
+Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how:
+
+    Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.
+
+    Add a close button and the .alert-dismissible class, which adds extra padding to the right of the alert and positions the close button.
+
+    On the close button, add the data-bs-dismiss="alert" attribute, which triggers the JavaScript functionality. 
+    Be sure to use the <button> element with it for proper behavior across all devices.
+
+    To animate alerts when dismissing them, be sure to add the .fade and .show classes.
+
+You can see this in action with a live demo:
+
+```
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+</div>
+```
+
+When an alert is dismissed, the element is completely removed from the page structure. 
+
+If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, 
+
+depending on the browser, reset to the start of the page/document. 
+
+
+For this reason, we recommend including additional JavaScript that listens for the closed.bs.alert event 
+and programmatically sets focus() to the most appropriate location in the page. 
+
+If you’re planning to move focus to a non-interactive element that normally does not receive focus, 
+make sure to add tabindex="-1" to the element. 
+
+![Image](13.PNG)
